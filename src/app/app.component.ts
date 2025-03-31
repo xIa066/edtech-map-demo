@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { MapComponent } from '../map/map.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [MapComponent],
+  template: `<h1>Welcome to EdTech Map Demo</h1>
+             <app-map></app-map>`,
 })
-export class AppComponent {
-  title = 'edtech-map-demo';
-}
+export class AppComponent {}
